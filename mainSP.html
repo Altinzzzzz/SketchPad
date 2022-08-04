@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleSP.css">
+    <script src = "mainCodeSP.js" defer> </script>
+</head>
+<body>
+    <div class = "adminTable">
+        <button class = "btn" onclick="changeMode('black')"> Black </button>
+        <button class = "btn" onclick="changeMode('white')"> White </button>
+        <button class = "btn" onclick="changeMode('random')"> Rainbow </button>
+        <button class = "btn" onclick="clearMode()"> Clear </button>
+        <p class = "stili"> 8x8 </p>
+        <input onclick = "makeRows(value, 3000)" type = "range" min = "1" max = "64" value = "16" id = "slider">
+    </div>
+    <div class = "mainC"> </div>
+</body>
+</html>

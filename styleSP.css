@@ -1,0 +1,91 @@
+:root{
+    --grid-rows: 1;
+}
+  
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.adminTable{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding-right: 10%;
+    padding-left: 10%;
+    text-align: center;
+}
+
+
+.mainC{
+    width: 650px;
+    border: 1px solid black;
+    height: 650px;
+    display: grid;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-rows), 1fr);
+}
+
+
+.grid-item{
+    text-align: center;
+    padding: 1px;
+    background-color: white;
+}
+  
+#slider{
+    -webkit-appearance: none;
+    height: 25px;
+    width: 80%;
+    margin-left: 10%;
+    outline: none;
+    opacity: 0.6;
+    background-color: black;
+    transition: opacity .2s;
+    border-radius: 25px;
+    cursor: pointer;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background-color: red;
+    height: 20px;
+    width: 20px;
+    overflow: visible;
+    border-radius: 25px;
+}
+
+#slider:hover{
+    opacity: 1;
+}
+
+.stili{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.btn{
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    font-size: 25px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.btn:focus{
+    background-color: black;
+    color: white;
+}
+
+.btn:hover{
+    background-color: rgb(204, 194, 194);
+    color: black;
+}
